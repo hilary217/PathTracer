@@ -175,7 +175,25 @@ Ray Camera::generate_ray_for_thin_lens(double x, double y, double rndR, double r
     // compute position and direction of ray from the input sensor sample coordinate.
     // Note: use rndR and rndTheta to uniformly sample a unit disk.
 
-    return Ray(Vector3D(), Vector3D());
+    Vector3D pLens = Vector3D();
+    pLens.x = lensRadius*sqrt(rndR)*cos(rndTheta);
+    pLens.y = lensRadius*sqrt(rndR)*sin(rndTheta);
+    pLens.z = 0;
+    //from 3-1 part 1
+    Vector3D bottom_left = Vector3D(-tan(radians(hFov)*.5), -tan(radians(vFov)*.5),-1);
+    Vector3D top_right = Vector3D(tan(radians(hFov)*.5),  tan(radians(vFov)*.5),-1);
+    Vector3D d = bottom_left + Vector3D(x*(top_right.x - bottom_left.x), y*(top_right.y - bottom_left.y), 0);
+    d.normalize();
+    Ray red = Ray(Vector3D(0, 0, 0), d);
+    Vector3D pFocus = red.o + red.d*focalDistance;
+    Vector3D dir = pFocus - pLens;
+    dir.normalize();
+    dir = c2w*dir;
+    Ray r = Ray(c2w*pLens+pos, dir);
+    r.max_t = fClip;
+    r.min_t = nClip;
+    return r;
+
 }
 
 

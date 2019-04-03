@@ -24,22 +24,60 @@
         <p>If you are well-versed in web development, feel free to ditch this template and make a better looking page. Just make sure that you include all the components as we've laid them out here. </p>
 
     <h2 align="middle">Part 1: Ray Generation and Intersection</h2>
-        <p>Describe what you did in Part 1. etc...</p>
-        <div align="center">
-            <table style="width=100%">
-                <tr>
-                    <td align="middle">
-                    <img src="images/example_image.png" width="480px" />
-                    <figcaption align="middle">Results Caption: my bunny is the bounciest bunny</figcaption>
-                </tr>
-            </table>
-        </div>
-        <p>Here is an example of how to include a simple formula:</p>
-        <p align="middle"><pre align="middle">a^2 + b^2 = c^2</pre></p>
-        <p>or, alternatively, you can include an SVG image of a LaTex formula.</p>
-        <p>This time it's your job to copy-paste in the rest of the sections :)</p>
+            <p>describe what you did in part 1.</p>
+            <p>Answer: In part 1, reflection and refraction are implemented and can be visualized via two spheres in the box. Increasing the maximum ray depth increases the maximum number of times a ray can be reflected and refracted. They are a little bit noisy because of the low sample rate.</p>
 
+            <p>Show a sequence of six images of scene CBspheres.dae rendered with max_ray_depth set to 0, 1, 2, 3, 4, 5, and 100. The other settings should be at least 64 samples per pixel and 4 samples per light. Point out the new multibounce effects that appear in each image.</p>
 
+            <p>Answer:</p>
+
+            <div align="center">
+                <table style="width=100%">
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part1/spheres_m_0.png" width="480px" />
+                            <figcaption align="middle">max ray depth = 0. No ray can be reflected or refracted, so we can only see the light source.</figcaption>
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part1/spheres_m_64_1.png" width="480px" />
+                            <figcaption align="middle">max ray depth = 1. Ray get reflected once on the mirror and glass sphere. The room is lit up by diffuse reflection, but the delta spheres only reflect the direct light from the light source. </figcaption>
+                            </br>
+                    </tr>
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part1/spheres_m_64_2.png" width="480px" />
+                            <figcaption align="middle">max ray depth = 2. The glass sphere on the right looks darker. The small sphere reflected on the mirror sphere looks dark.</figcaption>
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part1/spheres_m_64_3.png" width="480px" />
+                            <figcaption align="middle">max ray depth = 3. The small sphere reflected on the mirror sphere still looks dark.</figcaption>
+                            </br>
+                    </tr>
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part1/spheres_m_64_4.png" width="480px" />
+                            <figcaption align="middle">max ray depth = 4. The image is similar to depth = 100.</figcaption>
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part1/spheres_m_64_5.png" width="480px" />
+                            <figcaption align="middle">max ray depth = 5. The image is similar to depth = 100.</figcaption>
+                            </br>
+                    </tr>
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part1/spheres_m_100.png" width="480px" />
+                            <figcaption align="middle">max ray depth = 100. Increasing max ray depth gives brighter image.</figcaption>
+                            </br>
+                    </tr>
+                </table>
+            </div>
 
     <h2 align="middle">A Few Notes On Webpages</h2>
         <p>Here are a few problems students have encountered in the past. You will probably encounter these problems at some point, so don't wait until right before the deadline to check that everything is working. Test your website on the instructional machines early!</p>
