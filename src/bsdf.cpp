@@ -92,6 +92,7 @@ Spectrum MicrofacetBSDF::sample_f(const Vector3D& wo, Vector3D* wi, float* pdf) 
   //       and return the sampled BRDF value.
     Vector2D xy = sampler.get_sample();
 
+<<<<<<< HEAD
     float theta= atan(sqrt(-pow(alpha, 2) * log(1.0 - xy.x)));
     float phi = 2.0 * PI * xy.y;
     Vector3D h(cos(phi) * sin(theta), sin(phi) * sin(theta), cos(theta));
@@ -103,6 +104,10 @@ Spectrum MicrofacetBSDF::sample_f(const Vector3D& wo, Vector3D* wi, float* pdf) 
     float pwi = pwh / (4.0 * dot(*wi, h));
     *pdf = pwi;
     return MicrofacetBSDF::f(wo, *wi);
+=======
+  *wi = cosineHemisphereSampler.get_sample(pdf); //placeholder
+  return MicrofacetBSDF::f(wo, *wi);
+>>>>>>> e8913f43c62939599568ccc48a111bbf235a3ee6
 }
 
 // Refraction BSDF //
