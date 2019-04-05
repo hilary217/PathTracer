@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="PathTracer" targetName="uninstall" />
-      <config projectName="PathTracer" targetName="glfw" />
       <config projectName="PathTracer" targetName="CGL" />
+      <config projectName="PathTracer" targetName="glfw" />
+      <config projectName="PathTracer" targetName="uninstall" />
       <config projectName="PathTracer" targetName="glew" />
       <config projectName="PathTracer" targetName="pathtracer" />
     </generated>
@@ -16,11 +16,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcc6cd40-dc29-4402-80f0-5bf21bce6683" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pathtracer" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pathtracer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/application.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/application.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/bsdf.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/bsdf.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/camera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/camera.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/static_scene/environment_light.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/static_scene/environment_light.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dae/sky/CBbunny_microfacet_cu.dae" beforeDir="false" afterPath="$PROJECT_DIR$/dae/sky/CBbunny_microfacet_cu.dae" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/part1/spheres_m_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/part1/spheres_m_100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/part1/spheres_m_64_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/part1/spheres_m_64_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/part1/spheres_m_64_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/part1/spheres_m_64_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/part1/spheres_m_64_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/part1/spheres_m_64_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/part1/spheres_m_64_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/part1/spheres_m_64_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/part1/spheres_m_64_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/part1/spheres_m_64_5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bsdf.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/bsdf.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/camera.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pathtracer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pathtracer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static_scene/environment_light.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/static_scene/environment_light.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bsdf.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-543">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="2175">
+              <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -47,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/static_scene/environment_light.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
+            <state relative-caret-position="585">
+              <caret line="168" selection-start-line="168" selection-end-line="168" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -67,14 +81,36 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bsdf.h">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="160" column="6" selection-start-line="160" selection-start-column="6" selection-end-line="160" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dae/sky/bunny_microfacet_cu.dae">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dae/sky/CBbunny_microfacet_cu.dae">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="72" column="13" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+            <state relative-caret-position="523">
+              <caret line="124" column="15" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="15" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -97,8 +133,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="71" column="24" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+            <state relative-caret-position="398">
+              <caret line="261" column="43" lean-forward="true" selection-start-line="261" selection-start-column="43" selection-end-line="261" selection-end-column="43" />
+              <folding>
+                <element signature="e#7000#7018#0" expanded="true" />
+                <element signature="e#9904#9922#0" expanded="true" />
+                <element signature="e#15203#15221#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,26 +147,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pathtracer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="575" column="34" selection-start-line="575" selection-start-column="34" selection-end-line="575" selection-end-column="34" />
+            <state relative-caret-position="351">
+              <caret line="562" column="44" selection-start-line="562" selection-start-column="44" selection-end-line="562" selection-end-column="44" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dynamic_scene/environment_light.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dynamic_scene/mesh.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,7 +169,10 @@
       <find>2.2</find>
       <find>microfac</find>
       <find>alpha</find>
+      <find>eta</find>
       <find>raytrace_</find>
+      <find>Spectrum</find>
+      <find>double</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,19 +181,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/bsdf.cpp" />
         <option value="$PROJECT_DIR$/dae/sky/CBdragon_microfacet_au.dae" />
         <option value="$PROJECT_DIR$/src/static_scene/environment_light.cpp" />
-        <option value="$PROJECT_DIR$/src/pathtracer.cpp" />
         <option value="$PROJECT_DIR$/src/camera.cpp" />
+        <option value="$PROJECT_DIR$/dae/sky/CBbunny_microfacet_cu.dae" />
+        <option value="$PROJECT_DIR$/src/bsdf.cpp" />
+        <option value="$PROJECT_DIR$/src/pathtracer.cpp" />
         <option value="$PROJECT_DIR$/docs/index.html" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-45" />
+    <option name="x" value="53" />
     <option name="y" value="23" />
-    <option name="width" value="1344" />
+    <option name="width" value="1380" />
     <option name="height" value="721" />
   </component>
   <component name="ProjectView">
@@ -180,6 +210,11 @@
             <path>
               <item name="PathTracer" type="b2602c69:ProjectViewProjectNode" />
               <item name="p3-2-pathtracer-hilary217" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PathTracer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="p3-2-pathtracer-hilary217" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PathTracer" type="b2602c69:ProjectViewProjectNode" />
@@ -213,24 +248,6 @@
               <item name="PathTracer" type="b2602c69:ProjectViewProjectNode" />
               <item name="p3-2-pathtracer-hilary217" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PathTracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p3-2-pathtracer-hilary217" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="collada" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PathTracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p3-2-pathtracer-hilary217" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic_scene" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PathTracer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p3-2-pathtracer-hilary217" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PathTracer" type="b2602c69:ProjectViewProjectNode" />
@@ -277,7 +294,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pathtracer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/dae/sky/CBspheres.dae" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PathTracer" TARGET_NAME="pathtracer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PathTracer" RUN_TARGET_NAME="pathtracer">
+    <configuration name="pathtracer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/dae/sky/bunny_microfacet_cu.dae" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PathTracer" TARGET_NAME="pathtracer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PathTracer" RUN_TARGET_NAME="pathtracer">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -307,29 +324,29 @@
       <updated>1553279496812</updated>
       <workItem from="1553279501124" duration="9301000" />
       <workItem from="1553361825287" duration="2190000" />
-      <workItem from="1554180592646" duration="21588000" />
+      <workItem from="1554180592646" duration="37676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33079000" />
+    <option name="totallyTimeSpent" value="49167000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-45" y="23" width="1344" height="721" extended-state="0" />
+    <frame x="53" y="23" width="1380" height="721" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3156682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3071749" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32911393" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32911393" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3290938" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -463,19 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bsdf.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dynamic_scene/environment_light.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -483,36 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="226" column="23" selection-start-line="226" selection-start-column="23" selection-end-line="226" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bsdf.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-543">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static_scene/environment_light.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pathtracer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="575" column="34" selection-start-line="575" selection-start-column="34" selection-end-line="575" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,10 +500,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="124" column="15" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static_scene/environment_light.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bsdf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="160" column="6" selection-start-line="160" selection-start-column="6" selection-end-line="160" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dae/sky/bunny_microfacet_cu.dae">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dae/sky/CBbunny_microfacet_cu.dae">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="72" column="13" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bsdf.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pathtracer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="562" column="44" selection-start-line="562" selection-start-column="44" selection-end-line="562" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="71" column="24" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+        <state relative-caret-position="398">
+          <caret line="261" column="43" lean-forward="true" selection-start-line="261" selection-start-column="43" selection-end-line="261" selection-end-column="43" />
+          <folding>
+            <element signature="e#7000#7018#0" expanded="true" />
+            <element signature="e#9904#9922#0" expanded="true" />
+            <element signature="e#15203#15221#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

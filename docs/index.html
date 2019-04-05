@@ -16,70 +16,264 @@
 <body>
 <br />
 <h1 align="middle">Assignment 3: PathTracer</h1>
-    <h2 align="middle">Your Name</h2>
+    <h2 align="middle">Ruixin Huang, cs184-aed</h2>
 
     <div class="padded">
-        <p>Use this section to write an overview of the assignment. All of the text in your write-up should be <em>in your own words</em>. If you need to add additional HTML features to this document, you can search the <a href="http://www.w3schools.com/">http://www.w3schools.com/</a> website for instructions. To edit the HTML, you can just copy and paste existing chunks and fill in the text and image file names appropriately.</p>
-        <o>The website writeup is intended to be a self-contained walkthrough of the assignment: we want this to be a piece of work which showcases your understanding of relevant concepts through both mesh images as well as written explanations about what you did to complete each part of the assignment. Try to be as clear and organized as possible when writing about your own output files or extensions to the assignment. We want to understand what you've achieved and how you've done it!</p> 
-        <p>If you are well-versed in web development, feel free to ditch this template and make a better looking page. Just make sure that you include all the components as we've laid them out here. </p>
+        <p> A further expansion of project 3-1, where we add more parameters for the ray tracer such as
+        how many bounces the camera ray has, sampling method, depth of field and how focus the camera is.</p>
 
     <h2 align="middle">Part 1: Ray Generation and Intersection</h2>
-            <p>describe what you did in part 1.</p>
-            <p>Answer: In part 1, reflection and refraction are implemented and can be visualized via two spheres in the box. Increasing the maximum ray depth increases the maximum number of times a ray can be reflected and refracted. They are a little bit noisy because of the low sample rate.</p>
-
-            <p>Show a sequence of six images of scene CBspheres.dae rendered with max_ray_depth set to 0, 1, 2, 3, 4, 5, and 100. The other settings should be at least 64 samples per pixel and 4 samples per light. Point out the new multibounce effects that appear in each image.</p>
-
-            <p>Answer:</p>
 
             <div align="center">
                 <table style="width=100%">
                     <tr>
                         <br>
                         <td align="middle">
-                            <img src="part1/spheres_m_0.png" width="480px" />
-                            <figcaption align="middle">max ray depth = 0. No ray can be reflected or refracted, so we can only see the light source.</figcaption>
+                            <img src="part1/spheres_m_64_0.png" width="480px" />
+                            <figcaption align="middle">m = 0. only light source. </figcaption>
                             </br>
                             <br>
                         <td align="middle">
                             <img src="part1/spheres_m_64_1.png" width="480px" />
-                            <figcaption align="middle">max ray depth = 1. Ray get reflected once on the mirror and glass sphere. The room is lit up by diffuse reflection, but the delta spheres only reflect the direct light from the light source. </figcaption>
+                            <figcaption align="middle">m = 1.
+                                dark spheres
+                                </figcaption>
                             </br>
                     </tr>
                     <tr>
                         <br>
                         <td align="middle">
                             <img src="part1/spheres_m_64_2.png" width="480px" />
-                            <figcaption align="middle">max ray depth = 2. The glass sphere on the right looks darker. The small sphere reflected on the mirror sphere looks dark.</figcaption>
+                            <figcaption align="middle">m = 2.
+                                can see reflections between the spheres.
+                                the right sphere and the small sphere inside the left sphere looks dark.
+                                </figcaption>
                             </br>
                             <br>
                         <td align="middle">
                             <img src="part1/spheres_m_64_3.png" width="480px" />
-                            <figcaption align="middle">max ray depth = 3. The small sphere reflected on the mirror sphere still looks dark.</figcaption>
+                            <figcaption align="middle">m = 3.
+                                The small sphere reflected on the
+                                mirror sphere still looks dark but the right sphere isn't dark anymore because of refractions.</figcaption>
                             </br>
                     </tr>
                     <tr>
                         <br>
                         <td align="middle">
                             <img src="part1/spheres_m_64_4.png" width="480px" />
-                            <figcaption align="middle">max ray depth = 4. The image is similar to depth = 100.</figcaption>
+                            <figcaption align="middle">m = 4. the small sphere is not dark anymore.</figcaption>
                             </br>
                             <br>
                         <td align="middle">
                             <img src="part1/spheres_m_64_5.png" width="480px" />
-                            <figcaption align="middle">max ray depth = 5. The image is similar to depth = 100.</figcaption>
+                            <figcaption align="middle">m = 5. not much change.</figcaption>
                             </br>
                     </tr>
                     <tr>
                         <br>
                         <td align="middle">
-                            <img src="part1/spheres_m_100.png" width="480px" />
-                            <figcaption align="middle">max ray depth = 100. Increasing max ray depth gives brighter image.</figcaption>
+                            <img src="part1/spheres_m_64_100.png" width="480px" />
+                            <figcaption align="middle">m = 100. gives brighter image.</figcaption>
                             </br>
                     </tr>
                 </table>
             </div>
 
-    <h2 align="middle">A Few Notes On Webpages</h2>
+            <h2 align="middle">Part 2: Microfacet Material</h2>
+
+
+            <p>decrease the alpha value make the surface smoother. It becomes more of a mirror as alpha decreases.</p>
+
+            <div align="center">
+                <table style="width=100%">
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part2/morco_au_0_005.png" width="480px" />
+                            <figcaption align="middle">alpha = 0.005.</figcaption>
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part2/morco_au_0_05.png" width="480px" />
+                            <figcaption align="middle">alpha = 0.05.</figcaption>
+                            </br>
+                    </tr>
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part2/morco_au_0_25.png" width="480px" />
+                            <figcaption align="middle">alpha = 0.25.</figcaption>
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part2/morco_au_0_5.png" width="480px" />
+                            <figcaption align="middle">alpha = 0.5.</figcaption>
+                            </br>
+                    </tr>
+                </table>
+            </div>
+
+            <p>Using cosine hemisphere sampling gives a more noisy image than using importance sampling.
+                there are more randomness in cosine hemisphere sampling and so there are more noise.</p>
+            <div align="center">
+                <table style="width=100%">
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part2/cosine.png" width="480px" />
+                            <figcaption align="middle">cosine hemisphere sampling.</figcaption>
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part2/import.png" width="480px" />
+                            <figcaption align="middle">importance sampling.</figcaption>
+                            </br>
+                    </tr>
+                </table>
+            </div>
+
+            <p>eta are 0.059193, 0.059881, 0.047366. corresponding k are 4.1283, 3.5892, 2.8132. material is silver.</p>
+
+            <div align="center">
+                <table style="width=100%">
+                    <tr>
+                        <td align="middle">
+                            <img src="part2/silver.png" width="480px" />
+                            <figcaption align="middle">silver bunny.</figcaption>
+                    </tr>
+                </table>
+            </div>
+
+            <h2 align="middle">Part 3: Environment Light</h2>
+
+            <p> we use environment lightening such that if the camera ray doesn't intersect with anything,
+                it will eventually hit the environment light in the background, which is like a new light source. </p>
+
+            <p>The .exr file used is field.exr.</p>
+            <div align="center">
+                <table style="width=100%">
+                    <tr>
+                        <td align="middle">
+                            <img src="part3/Screen%20Shot%202019-04-03%20at%2011.33.30%20PM.png" width="480px" />
+                            <figcaption align="middle">field.jpg</figcaption>
+                    </tr>
+                </table>
+            </div>
+
+            <div align="center">
+                <table style="width=100%">
+                    <tr>
+                        <td align="middle">
+                            <img src="part3/probability_debug.png" width="480px" />
+                            <figcaption align="middle">probability_debug.png</figcaption>
+                    </tr>
+                </table>
+            </div>
+
+
+            <p> slightly Less noise in importance sampling.</p>
+            <div align="center">
+                <table style="width=100%">
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part3/uni.png" width="480px" />
+                            <figcaption align="middle">Uniform sampling.</figcaption>
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part3/important.png" width="480px" />
+                            <figcaption align="middle">Importance sampling.</figcaption>
+                            </br>
+                    </tr>
+                </table>
+            </div>
+
+
+            <p>Less noise in importance sampling, especially on edges.</p>
+            <div align="center">
+                <table style="width=100%">
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part3/uniform.png" width="480px" />
+                            <figcaption align="middle">Uniform sampling.</figcaption>
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part3/impor.png" width="480px" />
+                            <figcaption align="middle">Importance sampling.</figcaption>
+                            </br>
+                    </tr>
+                </table>
+            </div>
+
+            <h2 align="middle">Part 4: Depth of Field</h2>
+
+            <p>a this-lens camera doesn't focus throgh
+                one point as a pin-hole camera does. the larger the aperture, the less focused it becomes. on the other side, a thin-lens camera with aperture equals zero is a pin-hole camera.</p>
+
+            <p> "focus stack" with 4 visibly different depths.</p>
+
+            <div align="center">
+                <table style="width=100%">
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part4/-2.png" width="480px" />
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part4/-1.png" width="480px" />
+                            </br>
+                    </tr>
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part4/0.png" width="480px" />
+
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part4/2.png" width="480px" />
+
+                            </br>
+                    </tr>
+                </table>
+            </div>
+
+           <p>a sequence of 4 pictures with visibly different aperture sizes</p>
+            <div align="center">
+                <table style="width=100%">
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part4/000.png" width="480px" />
+
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part4/0.03.png" width="480px" />
+
+                            </br>
+                    </tr>
+                    <tr>
+                        <br>
+                        <td align="middle">
+                            <img src="part4/0.04.png" width="480px" />
+
+                            </br>
+                            <br>
+                        <td align="middle">
+                            <img src="part4/0.06.png" width="480px" />
+
+                            </br>
+                    </tr>
+                </table>
+            </div>
+
+
+            <h2 align="middle">A Few Notes On Webpages</h2>
         <p>Here are a few problems students have encountered in the past. You will probably encounter these problems at some point, so don't wait until right before the deadline to check that everything is working. Test your website on the instructional machines early!</p>
         <ul>
         <li>Your main report page should be called index.html.</li>
